@@ -44,4 +44,5 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: chandc/python-helloworld:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/python-helloworld:latest
+
